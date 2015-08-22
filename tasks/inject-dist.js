@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
     concat = require('gulp-concat'),
-    inject = require('gulp-inject'),;
+    inject = require('gulp-inject');
     
 gulp.task('inject-dist', function () {
   var target = gulp.src('./public/index.html');
