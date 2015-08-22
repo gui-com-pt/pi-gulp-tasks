@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
-    concat = require('gulp-concat');
+    concat = require('gulp-concat'),
+    templateCache = require('gulp-angular-templatecache');
     
 var templates = ['./public/*.html', './public/**/*.html', './public/**/**/*.html', './public/**/**/**/*.html',
         './app/*.html', './app/**/*.html', './app/**/**/*.html', './app/**/**/**/*.html'];
