@@ -7,6 +7,6 @@ gulp.task('inject-dist', function () {
   // It's not necessary to read the files (will speed up things), we're only after their paths:
   var sources = gulp.src(['./public/dist/*.js', './public/dist/*.css'], {read: false});
 
-  return target.pipe(inject(sources, {ignorePath: '/public', addRootSlash: false}))
+  return target.pipe(inject(sources, {ignorePath: '/public', addRootSlash: true}))
     .pipe(gulp.dest('./public'));
 });
